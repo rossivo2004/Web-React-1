@@ -1,0 +1,31 @@
+.active {
+  border-bottom: 2px solid;
+  position: relative; // cần thiết để pseudo-element `::after` định vị chính xác
+
+  &::after {
+    content: "";
+    display: block;
+    width: 20px;
+    height: 20px;
+    background-image: url("https://cdn-icons-png.flaticon.com/128/11346/11346384.png");
+    background-size: cover;
+    position: absolute;
+    top: -5px;
+    left: -20px;
+  }
+}
+.open {
+  transform: translateX(0);
+}
+
+.header_bottom_list_ct {
+  width: 230px;
+}
+
+.title {
+  display: flex;
+  justify-content: space-between;
+  width: 100%;
+  align-items: center;
+  font-size: 16px;
+}
