@@ -6,7 +6,7 @@ import './Button.scss';
 
 const cx = classNames.bind(styles);
 
-function Button({ to, href, primary = false, disabled = false, children, className, onClick, small = false, large = false, ...passProps }) {
+function Button({ to, href, primary = false, outline = false, disabled = false, children, className, onClick, small = false, large = false, ...passProps }) {
     let Comp = 'button';
     const props = {
         onClick,
@@ -25,7 +25,7 @@ function Button({ to, href, primary = false, disabled = false, children, classNa
         Comp = 'a';
     }
 
-    const classes = cx('wrapper', { [className]: className, primary, disabled, small, large })
+    const classes = cx('wrapper', { [className]: className, primary, outline, disabled, small, large })
 
     return (<Comp className={classes} {...props}>
         <span className={cx('title')}>{children}</span>

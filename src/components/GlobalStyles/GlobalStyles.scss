@@ -1,13 +1,115 @@
 @import url("https://fonts.googleapis.com/css2?family=Cabin:ital,wght@0,400..700;1,400..700&display=swap");
-
+@import url("https://fonts.googleapis.com/css2?family=Miniver&display=swap");
 // src/components/GlobalStyles/GlobalStyles.scss
 body {
-  background-color: #f0f0f0;
+  background-color: rgb(254, 254, 254, 100%);
   font-family: Arial, sans-serif;
   font-family: "Cabin", sans-serif;
+  background-color: black;
+  color: #fff;
 }
 
 :root {
-  --primary: hsl(120, 98%, 16%);
+  --primary: #ff9f0d;
   --white: #fff;
+  --text_gray: #4f4f4f;
+}
+
+.title_home {
+  font-family: "Miniver", cursive;
+}
+
+.home_img_1 {
+  background-image: url("http://localhost:3000/images/Group 1000002107.png");
+}
+
+.home_img_2 {
+  background-image: url("http://localhost:3000/images/Restraind creative Process.png");
+}
+
+.aboutus_img_2 {
+  background-image: url("http://localhost:3000/images/pab_4.png");
+}
+
+footer::before {
+  content: "";
+  display: block;
+  width: 800px;
+  height: 2px;
+  background-color: #ff9f0d;
+  margin: 0 auto;
+  border-radius: 999px;
+}
+
+.shop_banner {
+  background-image: url("http://localhost:3000/images/shop_1.png");
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+
+/* CSS */
+.detai_quantity[type="number"]::-webkit-inner-spin-button,
+.detai_quantity[type="number"]::-webkit-outer-spin-button {
+  -webkit-appearance: none;
+  margin: 0;
+}
+
+.detai_quantity[type="number"] {
+  -moz-appearance: textfield;
+}
+
+.detai_quantity:focus {
+  outline: none;
+  border: transparent;
+}
+
+/* Khi hover, không hiển thị */
+.detai_quantity[type="number"]:hover::-webkit-inner-spin-button {
+  display: none;
+}
+
+// .star {
+//   display: inline-block;
+//   width: 0;
+//   height: 0;
+//   margin-right: 10px;
+//   border-right: 15px solid transparent;
+//   border-bottom: 15px solid yellow;
+//   border-left: 15px solid transparent;
+//   transform: rotate(35deg);
+//   position: relative;
+// }
+
+// .star::before {
+//   content: "";
+//   width: 0;
+//   height: 0;
+//   position: absolute;
+//   top: 3px;
+//   left: -18px;
+//   border-right: 15px solid transparent;
+//   border-bottom: 15px solid yellow;
+//   border-left: 15px solid transparent;
+//   transform: rotate(-70deg);
+// }
+
+// .star::after {
+//   content: "";
+//   width: 0;
+//   height: 0;
+//   position: absolute;
+//   top: 3px;
+//   left: 3px;
+//   border-right: 15px solid transparent;
+//   border-bottom: 15px solid yellow;
+//   border-left: 15px solid transparent;
+//   transform: rotate(70deg);
+// }
+
+.trs-1 {
+  transition: 1s;
+}
+
+.ab_ov_1 {
+  background-color: rgba($color: #ff9f0d, $alpha: 85%);
 }

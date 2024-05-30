@@ -7,6 +7,9 @@ import ShopPage from './pages/user/ShopPage';
 import LoginPage from './pages/user/LoginPage';
 import DashboardPage from './pages/admin/DashboardPage';
 import ProductsPage from './pages/admin/ProductsPage';
+import ShopDetail from './pages/user/ShopDetail';
+import Checkout from './pages/user/Checkout';
+import AboutUs from './pages/user/AboutUs';
 
 const App = () => {
   return (
@@ -17,6 +20,9 @@ const App = () => {
           <Route index element={<HomePage />} />
           <Route path="shop" element={<ShopPage />} />
           <Route path="login" element={<LoginPage />} />
+          <Route path="detail" element={<ShopDetail />} />
+          <Route path="checkout" element={<Checkout />} />
+          <Route path="aboutus" element={<AboutUs />} />
         </Route>
 
         {/* Routes cho admin */}

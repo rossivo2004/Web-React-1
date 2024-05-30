@@ -1,18 +1,20 @@
 .active {
-  border-bottom: 2px solid;
+  // border-bottom: 2px solid;
+  color: #ff9f0d;
   position: relative; // cần thiết để pseudo-element `::after` định vị chính xác
 
-  &::after {
-    content: "";
-    display: block;
-    width: 20px;
-    height: 20px;
-    background-image: url("https://cdn-icons-png.flaticon.com/128/11346/11346384.png");
-    background-size: cover;
-    position: absolute;
-    top: -5px;
-    left: -20px;
-  }
+  // &::after {
+  //   content: "";
+  //   display: block;
+  //   width: 5px;
+  //   height: 5px;
+  //   border-radius: 50%;
+  //   background-size: cover;
+  //   position: absolute;
+  //   top: 20px;
+  //   left: 40%;
+  //   background-color: #ff9f0d;
+  // }
 }
 .open {
   transform: translateX(0);
@@ -28,4 +30,16 @@
   width: 100%;
   align-items: center;
   font-size: 16px;
+}
+
+.header_scroll {
+  transition: 0.5s;
+}
+
+.nav_menu__mobile {
+  transition: 1s;
+}
+
+.translate0 {
+  transform: translateX(1);
 }
